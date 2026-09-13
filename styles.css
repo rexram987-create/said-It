@@ -1,16 +1,16 @@
 :root {
-  --bg: #f7f3ee;
-  --surface: #fffdf9;
-  --surface-2: #efe5d9;
-  --text: #2f261f;
-  --muted: #6b5c50;
-  --accent: #6d4c41;
-  --accent-strong: #4e342e;
-  --border: #d9cbbd;
-  --focus: #0b57d0;
-  --success: #2e7d32;
-  --warning: #9a6700;
-  --shadow: 0 12px 32px rgba(63, 44, 35, .10);
+  --bg: #071426;
+  --surface: #0d2038;
+  --surface-2: #152d49;
+  --text: #f5f7fb;
+  --muted: #b8c7d9;
+  --accent: #d6ad60;
+  --accent-strong: #f0c978;
+  --border: #294563;
+  --focus: #66b3ff;
+  --success: #7bd88f;
+  --warning: #ffd166;
+  --shadow: 0 12px 32px rgba(0, 0, 0, .30);
 }
 
 * { box-sizing: border-box; }
@@ -165,7 +165,7 @@ h2 { margin: 0; }
   border: 1px solid var(--border);
   border-radius: 20px;
   background: var(--surface);
-  box-shadow: 0 6px 18px rgba(63,44,35,.06);
+  box-shadow: 0 6px 18px rgba(0,0,0,.22);
 }
 .quote-card:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
 .quote-text { font-size: 1.3rem; font-weight: 800; margin: .2rem 0 1rem; }
