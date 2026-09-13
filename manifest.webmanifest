@@ -1,0 +1,20 @@
+{
+  "name": "אמרו את זה — Said It",
+  "short_name": "Said It",
+  "description": "אנציקלופדיה אינטראקטיבית של אמרות, מוטואים ופתגמים מפורסמים.",
+  "lang": "he",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f3ee",
+  "theme_color": "#6d4c41",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
