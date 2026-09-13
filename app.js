@@ -139,9 +139,67 @@ const quotes = [
     sourceLabel: "Ville de Paris — סמלי פריז",
     source: "https://www.paris.fr/pages/les-symboles-de-paris-2366"
   }
+  ,
+  {
+    id: "seuss-read-learn",
+    quote: "ככל שתקרא יותר, כך תדע יותר דברים; ככל שתלמד יותר, כך תגיע ליותר מקומות.",
+    original: "The more that you read, the more things you will know. The more that you learn, the more places you’ll go.",
+    person: "ד״ר סוס",
+    category: "ספרות ותרבות",
+    status: "מאומת",
+    statusClass: "verified",
+    year: "1978",
+    meaning: "קריאה ולמידה פותחות לאדם אפשרויות חדשות ומרחיבות את עולמו.",
+    story: "האמרה מופיעה בספר I Can Read with My Eyes Shut! של ד״ר סוס.",
+    sourceLabel: "Dr. Seuss — I Can Read with My Eyes Shut!",
+    source: "https://www.seussville.com/"
+  },
+  {
+    id: "seuss-mountains",
+    quote: "ילד, אתה עוד תזיז הרים!",
+    original: "Kid, you’ll move mountains!",
+    person: "ד״ר סוס",
+    category: "ספרות ותרבות",
+    status: "מאומת",
+    statusClass: "verified",
+    year: "1990",
+    meaning: "עידוד להאמין ביכולת להתמודד עם אתגרים גדולים ולהגיע רחוק.",
+    story: "המשפט מופיע בספר Oh, the Places You’ll Go!, אחד מספריו האחרונים והמוכרים של ד״ר סוס.",
+    sourceLabel: "Dr. Seuss — Oh, the Places You’ll Go!",
+    source: "https://www.seussville.com/"
+  },
+  {
+    id: "scout-be-prepared",
+    quote: "היה נכון.",
+    original: "Be Prepared.",
+    person: "תנועת הצופים — רוברט באדן־פאוול",
+    category: "צופים ותנועות",
+    status: "מוטו רשמי ומאומת",
+    statusClass: "verified",
+    year: "1908",
+    meaning: "להיות מוכן בגוף ובמחשבה למלא את חובתך ולהתמודד עם מצבים בלתי צפויים.",
+    story: "באדן־פאוול הציג את Be Prepared כמוטו של הצופים ב־Scouting for Boys. המוטו נשאר מזוהה עם תנועת הצופים ברחבי העולם.",
+    sourceLabel: "World Scouting / Scouting for Boys",
+    source: "https://www.scout.org/"
+  },
+  {
+    id: "scout-leave-better",
+    quote: "נסה להשאיר את העולם קצת טוב יותר מכפי שמצאת אותו.",
+    original: "Try and leave this world a little better than you found it.",
+    person: "רוברט באדן־פאוול",
+    category: "צופים ותנועות",
+    status: "מאומת",
+    statusClass: "verified",
+    year: "פורסם לאחר מותו ב־1941",
+    meaning: "שאיפה שכל אדם יתרום בחייו משהו חיובי לעולם ולחברה.",
+    story: "המשפט נכלל במסר הפרידה שבאדן־פאוול הכין לצופים ושפורסם לאחר מותו.",
+    sourceLabel: "World Organization of the Scout Movement — Scouting’s History",
+    source: "https://www.scout.org/who-we-are/scout-movement/scoutings-history"
+  }
+
 ];
 
-const categories = ["אישים מפורסמים", "מוטואים של מדינות", "מוטואים של ערים", "אמרות היסטוריות", "ביטויים לטיניים"];
+const categories = ["אישים מפורסמים", "מוטואים של מדינות", "מוטואים של ערים", "אמרות היסטוריות", "ביטויים לטיניים", "ספרות ותרבות", "צופים ותנועות"];
 const state = {
   category: null,
   favoritesOnly: false,
