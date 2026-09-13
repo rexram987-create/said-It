@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#6d4c41" />
+  <meta name="description" content="אמרו את זה — אנציקלופדיה אינטראקטיבית של אמרות, מוטואים ופתגמים מפורסמים." />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./styles.css" />
+  <title>אמרו את זה | Said It</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">דלג לתוכן</a>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true">❝</div>
+      <div>
+        <strong>אמרו את זה</strong>
+        <span>Said It</span>
+      </div>
+    </div>
+    <nav class="top-actions" aria-label="פעולות">
+      <button id="favoritesToggle" class="icon-button" type="button" aria-pressed="false">❤ מועדפים</button>
+      <button id="contrastToggle" class="icon-button" type="button" aria-pressed="false">◐ ניגודיות</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">מילים שנשארו בהיסטוריה</p>
+      <h1 id="hero-title">גלו את הסיפור שמאחורי האמרות המפורסמות בעולם</h1>
+      <p>חפשו אמרה, שמרו למועדפים, הקשיבו להקראה ונסו לזהות מי אמר אותה.</p>
+
+      <div class="search-wrap">
+        <label for="searchInput">חיפוש</label>
+        <input id="searchInput" type="search" inputmode="search" placeholder="לדוגמה: קיסר, חירות, לטינית…" autocomplete="off" />
+      </div>
+
+      <div class="hero-actions">
+        <button id="randomBtn" class="primary" type="button">🎲 אמרה אקראית</button>
+        <button id="quizBtn" class="secondary" type="button">🧠 התחל חידון</button>
+      </div>
+    </section>
+
+    <section class="categories" aria-labelledby="categories-title">
+      <div class="section-heading">
+        <h2 id="categories-title">קטגוריות</h2>
+        <button id="clearFilter" class="text-button" type="button">הצג הכל</button>
+      </div>
+      <div id="categoryList" class="category-list" role="list"></div>
+    </section>
+
+    <section aria-labelledby="quotes-title">
+      <div class="section-heading">
+        <div>
+          <h2 id="quotes-title">אמרות ומוטואים</h2>
+          <p id="resultCount" class="muted" aria-live="polite"></p>
+        </div>
+      </div>
+      <div id="quoteGrid" class="quote-grid"></div>
+      <p id="emptyState" class="empty-state" hidden>לא נמצאו אמרות שמתאימות לחיפוש.</p>
+    </section>
+  </main>
+
+  <dialog id="quoteDialog" class="dialog">
+    <article id="dialogContent"></article>
+    <form method="dialog">
+      <button class="secondary full" type="submit">סגירה</button>
+    </form>
+  </dialog>
+
+  <dialog id="quizDialog" class="dialog">
+    <div id="quizContent"></div>
+    <form method="dialog">
+      <button class="secondary full" type="submit">סגירת החידון</button>
+    </form>
+  </dialog>
+
+  <footer>
+    <p>אמרו את זה — גרסה ראשונה. כל ייחוס מסומן לפי רמת הוודאות שלו.</p>
+  </footer>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
